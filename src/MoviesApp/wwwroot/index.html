@@ -4,10 +4,17 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-<body>
-    <h1>Hi Ronald! This is your Aurelia project!</h1>
 
-    <script src="greeter.js"></script>
-    <script src="app.js"></script>
+
+<body aurelia-app>
+    <!--<h1>Hi Ronald. This is the normal view</h1>-->
+      
+    <!--<div aurelia-app></div>-->
+   
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+        System.import("aurelia-bootstrapper");
+    </script>
 </body>
 </html>
